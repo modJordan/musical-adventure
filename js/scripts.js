@@ -2,33 +2,21 @@
 //Business Logic
 function beepBoop(text) {
   text = text.replace(/\s/g, "");
-  const inputNumber = parseInt(text, 10);
-  // let stringArray = Array.from(inputNumber);
-  let numArray = [];
-  let numResultArray = [];
+  const numArray = Array.from(text);
 
-  for (let i = 0; i <= inputNumber; i++) {
-    numResultArray.push(i);
-  }
-
-  numResultArray.forEach(function (num) {
-    if (num === 1) {
-      numArray.push("Beep!")
-    } else if (num === 2) {
-      numArray.push("Boop!");
-    } else if (num === 3) {
-      numArray.push("Won't you be my neighbor?")
+  const resultArray = numArray.map(num => {
+    if (num === "1") {
+      return "Beep!"
+    } else if (num === "2") {
+      return "Boop!"
+    } else if (num === "3") {
+      return "Won't you be my neighbor?"
     } else {
-      numArray.push(num);
+      return num
     }
   });
-  return numArray.join(" ")
+  return resultArray.join(" ");
 }
-
-function caluclateSpan(text) {
-  numArray = [text]
-}
-
 
 // UI Logic
 function handleFormSubmission(e) {
