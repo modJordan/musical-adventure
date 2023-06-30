@@ -9,21 +9,19 @@ function isEmpty() {
   return false;
 }
 //Business Logic
-beepBoop(text) {
-  let numberArray = Array.from(number);
-  let number = parseInt(numberArray);
-  numberArray.forEach(function (num) {
-    for (i = 0; i < numberArray.length; i++)
-      if (num = 1) {
-        console.log("contained 1")
-        return numberArray[i].replace(1, "Beep!");
-      } else {
-        console.log("did not contain 1")
-        return numberArray[i];
-      }
-  })
-  console.log(numberArray);
-  return numberArray;
+function beepBoop(text) {
+  let stringArray = Array.from(text);
+  let resultArray = [];
+
+  stringArray.forEach(function (num) {
+    if (num === "1") {
+      resultArray.push("Beep!")
+    } else {
+      console.log("did not contain 1")
+      resultArray.push(parseInt(num));
+    }
+  });
+  return resultArray.join(" ")
 }
 
 
