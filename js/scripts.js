@@ -24,6 +24,8 @@ window.onload = function () {
     const text = document.getElementById("num-input").value;
     let result = beepBoop(text)
 
+
+    document.getElementById("outputBox").classList.remove("hidden");
     document.getElementById("Output").classList.remove("hidden");
     document.getElementById("outputText").innerText = result;
   }

@@ -9,6 +9,14 @@ h1 {
   margin-bottom: 20vh;
 }
 
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 #output {
   font-family: 'VT323', monospace;
   font-size: 24px;
@@ -23,6 +31,7 @@ h1 {
   border: 2px solid #656464;
   border-radius: 10px;
   word-break: break-all;
+  margin: 10%;
 }
 
 .box h2 {
