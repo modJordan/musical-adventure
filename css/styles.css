@@ -3,13 +3,69 @@
 }
 
 h1 {
+  font-family: 'Press Start 2P', cursive;
   margin-top: 10vh;
   text-align: center;
-  margin-bottom: 8vh;
+  margin-bottom: 20vh;
 }
 
-#text-input {
-  height: 200px;
-  width: 500px;
-  margin: auto;
+#output {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.box {
+  font-family: 'VT323', monospace;
+  padding: 0 50px 0 10px;
+  border: 2px solid #656464;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.box h2 {
+  font-family: 'VT323', monospace;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+#outputText {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  overflow: hidden;
+  border-right: 3px solid;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+input[type='number'] {
+  font-family: 'VT323', monospace;
+  width: 50%;
+  height: fit-content;
+}
+
+#num-input {
+  font-family: 'VT323', monospace;
+  font-size: 38px;
+}
+
+button {
+  display: inline-block;
+  background-color: #7b38d8;
+  padding: 10px;
+  width: 200px;
+  color: #ffffff;
+  text-align: center;
+  border: 4px double #cccccc;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 28px;
+}
+
+.container {
+  text-align: center;
 }

@@ -6,18 +6,27 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Roboger's Neighborhood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <title>Arragato Mr. Roboger!</title>
 </head>
 
 <body>
-  <h1 id="headerOne">Mr. Roboger's Neighborhood</h1>
-  <form id="form">
-    <input type="number" id="num-input" placeholder="Enter your numerical message beep boop!"
-      class="form-control"></input>
-    <button type="submit" class="button">Submit</button>
-  </form>
-  <div>
-    <p id="pOutput" class="hidden">Mr. Roboger says:</p>
+  <div class="container">
+    <h1 id="headerOne">Mr. Roboger's Neighborhood</h1>
+    <form id="form">
+      <input type="number" id="num-input" style="width: 800px;" placeholder="Enter your numerical message beep boop!"
+        class="form-control"></input>
+      <br />
+      <br />
+      <br />
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+  <div class="box">
+    <h2>Mr. Roboger says: </h2>
+    <p id="Output" class="hidden"><span id="outputText"></span></p>
   </div>
 </body>
 
