@@ -2,8 +2,8 @@
 //Business Logic
 function beepBoop(text) {
   text = text.replace(/\s/g, "");
-  let stringArray = Array.from(text);
   const inputNumber = parseInt(text, 10);
+  // let stringArray = Array.from(inputNumber);
   let numArray = [];
   let numResultArray = [];
 

@@ -29,3 +29,9 @@ Code:
 let text = "01 25638 201 23"
 beepBoop();
 Expected Output: "0 Beep! Boop! 56 "Won't you be my neighbor?" 8 Boop! 0 Beep! Boop! Won't you by my neighbor?"
+
+Test: "It should create an array with elements counting up to the input number amount."
+Code:
+let text = "13";
+beepBoop(text);
+Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5 6 7 8 9 10 11 12 13"
