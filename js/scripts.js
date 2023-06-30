@@ -1,7 +1,6 @@
 //Utility Logic
 function isEmpty() {
   for (let i = 0; i < arguments.length; i++) {
-    console.log(arguments[i]);
     if (arguments[i].trim().length === 0) {
       return true;
     }
@@ -10,15 +9,19 @@ function isEmpty() {
 }
 //Business Logic
 function beepBoop(text) {
+  text = text.replace(/\s/g, "");
   let stringArray = Array.from(text);
   let resultArray = [];
 
   stringArray.forEach(function (num) {
     if (num === "1") {
       resultArray.push("Beep!")
+    } else if (num === "2") {
+      resultArray.push("Boop!");
+    } else if (num === "3") {
+      resultArray.push("Won't you be my neighbor?")
     } else {
-      console.log("did not contain 1")
-      resultArray.push(parseInt(num));
+      resultArray.push(num);
     }
   });
   return resultArray.join(" ")
@@ -31,7 +34,7 @@ function handleFormSubmission(e) {
   const text = document.getElementById("text-input").value;
   document.getElementById("pTag").removeAttribute("hidden")
   document.getElementById("pTag").innerText = beepBoop(text);
-  let beepBoopOutput = beepBoop(text);
+  let beepBoopOutput = beepBoop();
   if (beepBoopOutput) {
     document.querySelector("p#pOutput").append(beepBoopOutput);
   } else {
