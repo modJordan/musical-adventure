@@ -36,3 +36,8 @@ let text = "13";
 beepBoop(text);
 Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5 6 7 8 9 10 11 12 13"
 
+Test: "It should replace 1, 2 or 3 according to their hiearchial position with 3 being the highest."
+Code:
+Let text = "13";
+beepBoop();
+Expected Output: "0 Beep! Boop! Won't you be my neighbor? 4 5 6 7 8 9 Beep! Beep! Boop! Won't you be my neighbor?"
