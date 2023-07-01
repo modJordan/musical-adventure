@@ -17,7 +17,7 @@ h2 {
   gap: 2px;
 }
 
-#output {
+#Output {
   font-family: 'VT323', monospace;
   font-size: 24px;
   display: flex;
@@ -39,15 +39,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 2px;
-}
-
-#outputText {
-  font-family: 'VT323', monospace;
-  font-size: 24px;
-  overflow: hidden;
-  border-right: 3px solid;
-  white-space: nowrap;
-  position: relative;
 }
 
 

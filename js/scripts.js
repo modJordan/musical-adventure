@@ -1,20 +1,22 @@
 window.onload = function () {
   //Business Logic
-  function beepBoop(text) {
-    text = text.replace(/\s/g, "");
-    const numArray = Array.from(text);
+  function beepBoop(num) {
+    const resultArray = [];
 
-    const resultArray = numArray.map(num => {
-      if (num === "1") {
-        return "Beep!";
-      } else if (num === "2") {
-        return "Boop!";
-      } else if (num === "3") {
-        return "Won't you be my neighbor?";
+
+    for (let i = 0; i <= num; i++) {
+      const currentNum = String(i)
+
+      if (currentNum.includes('3')) {
+        resultArray.push("Won't you be my neighbor?");
+      } else if (currentNum.includes('2')) {
+        resultArray.push("Boop!");
+      } else if (currentNum.includes('1')) {
+        resultArray.push("Beep!");
       } else {
-        return num;
+        resultArray.push(currentNum);
       }
-    });
+    }
     return resultArray.join(" ");
   }
 
@@ -22,12 +24,11 @@ window.onload = function () {
   function handleFormSubmission(e) {
     e.preventDefault();
     const text = document.getElementById("num-input").value;
-    let result = beepBoop(text)
+    const num = parseInt(text);
+    let result = beepBoop(num);
 
-
-    document.getElementById("outputBox").classList.remove("hidden");
     document.getElementById("Output").classList.remove("hidden");
-    document.getElementById("outputText").innerText = result;
+    document.getElementById("Output").innerText = result;
   }
 
   document.querySelector("form#form").addEventListener("submit", handleFormSubmission);
