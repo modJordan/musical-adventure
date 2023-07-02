@@ -49,11 +49,11 @@ let text = "1";
 beepBoop(text);
 Expected Output: "Beep!"
 
-Test: "It should replace numbers that contain a "2" with "Boop"
+Test: "It should replace numbers that contain a "2" with "Boop!"
 Code: 
 let text = "2";
 beepBoop(text);
-Expected Output: "Boop"
+Expected Output: "Boop!"
 
 Test: "It should replace 3 with the string 'Won't you be my neighbor?'"
 Code:
