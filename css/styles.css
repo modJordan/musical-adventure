@@ -3,7 +3,7 @@
 }
 
 html {
-  background-image: url(/img/roboneighbor.jpg);
+  background-image: url(img/roboneighbor.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -58,7 +58,6 @@ h2 {
 
 .box h2 {
   font-family: 'VT323', monospace;
-  /* display: flex; */
   align-items: center;
   gap: 2px;
 }

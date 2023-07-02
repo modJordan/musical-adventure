@@ -3,7 +3,6 @@ window.onload = function () {
   function beepBoop(num) {
     const resultArray = [];
 
-
     for (let i = 0; i <= num; i++) {
       const currentNum = String(i)
 
