@@ -2,11 +2,32 @@
   display: none;
 }
 
+html {
+  background-image: url(/img/roboneighbor.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 h1 {
   font-family: 'Press Start 2P', cursive;
   margin-top: 10vh;
   text-align: center;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 2px solid #656464;
+  padding: 0 50px 0 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.totoro {
+  height: 80px;
+  width: auto;
+  mask-repeat: repeat;
+
 }
 
 h2 {
@@ -29,14 +50,15 @@ h2 {
   font-family: 'VT323', monospace;
   padding: 0 50px 0 10px;
   border: 2px solid #656464;
+  background-color: white;
   border-radius: 10px;
   word-break: break-all;
-  margin: 10%;
+  margin: 5%;
 }
 
 .box h2 {
   font-family: 'VT323', monospace;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 2px;
 }
